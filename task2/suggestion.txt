@@ -1,0 +1,17 @@
+    1. RewriteEngine on
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteRule . getinfo.php [L]
+	2.Table name condo should have primary key.
+	3.function split is depreciated use(explode).
+	4.In getinfo.php object should be of class propertyData.
+    5.The Mysql and table variable in the base class should be public.
+    6.Remove the contructor from the parent class.
+    7.Add the contructor in propertyData class, 
+    8.overwrite the table values of parent class.
+    9.Create the mysql object the child class controller.
+	10.	Can not the return the jason_decode value as a ajax responces.
+	11.Need to echo or print the value as ajax responces.
+	12. To add the foreign key references between property and HDB table , both the table storage engine should be of same type Innodb.
+	13. To add the foreign key refrences between property and condo table, condo.PID should be same datatype,
+	14. No need to send the header explicitly, browser will take care of it.
